@@ -11,10 +11,57 @@ import json
 import re
 from re import search
 import datetime,calendar
+import time
 from datetime import date
+from rest_framework_jwt.settings import api_settings
+from rest_framework.authtoken.views import ObtainAuthToken
+from rest_framework.authtoken.models import Token
+from rest_framework.response import Response
+import sys
+sys.path.append('..')
+from fc_django.settings import SECRET_KEY
+import jwt
 
+@csrf_exempt
 def helloWorld(request):
-    return HttpResponse('Hello from Django!')
+    body_unicode = request.body.decode('utf-8')
+    body_data = json.loads(body_unicode)
+    jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
+    jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
+
+
+
+   # payload = jwt_payload_handler(user)
+    refresh_token_content = {
+        "username":body_data['username'],
+        "password": body_data['password']
+    }
+    refresh_Token = {'refreshToken': jwt.encode(refresh_token_content, SECRET_KEY)}
+    temp = refresh_Token.get('refreshToken')
+    actual_refresh_token = temp.decode("utf-8")
+    ts = int(time.time())  # adding issual_time and expire_time
+    access_token_content = {
+        "username": body_data['username'],
+        "password": body_data['password'],
+        "issual_time": ts,
+        "expire_time": ts + 60
+    }
+    jwt_token = {'token': jwt.encode(access_token_content, SECRET_KEY)}
+    u = jwt_token.get('token')
+    actual_access_token = u.decode("utf-8")
+    ts = float(time.time())
+    final_payload_x = {"user":
+        {
+            "username": body_data['username'],
+            "password":  body_data['password'],
+            "issual_time": int(ts),
+            "expire_time": int(ts + 60)
+        },
+
+        "jwtToken": actual_access_token,
+        "refreshToken": actual_refresh_token
+    }
+    return JsonResponse(final_payload_x)
 
 @csrf_exempt
 def addLoginCredentials(request):
