@@ -3,8 +3,68 @@
   <component name="ChangeListManager">
     <list default="true" id="7e3818b7-b9e0-41eb-ba06-bdbf196b925c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fc_django/facerecog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/fc_django/facerecog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/request.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/1058/IMG_20200513_172125.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/1058/IMG_20200513_172128.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/1058/IMG_20200513_172132.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/1058/IMG_20200513_172446.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/1058/IMG_20200513_172459.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/1058/Snapchat-1025132222.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/1058/Snapchat-1042784846.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/1058/Snapchat-1067163703.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/1058/Snapchat-1683753052.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/1058/Snapchat-1918150222.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/1058/Snapchat-943645053.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/1058/WIN_20200513_171510.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/1058/WIN_20200513_172718.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/1058/trainingData.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/11/220px_Kangana_Ranaut_at_Fever_104_FM_Studios.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/11/435069_kangana.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/11/5c4b0acea3227.image.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/11/67896457.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/11/Blue_Kangana_d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/11/Inside_Kangana_Ranaut_Starrer_Manikarnikas_Wrap_Up_Party.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/11/Kangana.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/11/Kangana_Ranaut1_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/11/Kangana_Ranaut_Tomatoheart_6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/11/Kangana_Ranaut_g_d.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/11/Kangana_Ranaut_rare_pictures.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/11/Kangna_Ranaut_1900x.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/11/have_been_harassed_by_actors_on_sets__says_kangana_ranaut_2019_01_21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/11/indian_bollywood_actress_kangana_ranaut_showcases_a_creation_by_at_picture_id1092782148.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/11/k2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/11/k3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/11/k5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/11/k9.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/11/kangana_ranaut (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/11/kangana_ranaut_21.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/11/kangana_saree_look_anita_dongre.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/11/kangna_ranaut_20150417103630_164.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/11/maxresdefault.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/11/nationalherald_2019_02_da01d787_7539_45d2_b1a2_e9969b8071ea_Kanagana_ranaut.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/TrainingData/11/trainingData.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/facerecog/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/facerecog/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/facerecog/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/facerecog/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/facerecog/migrations/0002_attendance.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/facerecog/migrations/0003_logincredentials.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/facerecog/migrations/0004_auto_20200529_1627.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/facerecog/migrations/0005_message.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/facerecog/migrations/0006_auto_20200530_1616.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/facerecog/migrations/0007_auto_20200530_1638.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/facerecog/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/facerecog/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/facerecog/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/facerecog/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/facerecog/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/fc_django/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/fc_django/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/fc_django/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/fc_django/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/fc_django/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/haarcascade_frontalface_default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/manage.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
