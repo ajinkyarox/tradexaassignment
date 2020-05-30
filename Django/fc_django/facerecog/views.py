@@ -2,7 +2,7 @@
 import os
 import base64
 from django.http import HttpResponse
-from .models import LoginCredentials
+from .models import LoginCredentials,Message
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from django.http import QueryDict
@@ -168,38 +168,124 @@ def login(request):
         response = {'status': 'Failure:Given method is POST method.'}
     return JsonResponse(response,safe=False)
 
-#Given a directory below function returns part of gray_img which is face alongwith its label/ID
+
 @csrf_exempt
 def post(request):
-    print(request.headers)
-    response={"status":"Failure:Default"}
-    if request.method=="GET":
-        print("GET Method")
-    elif request.method=="POST":
 
-        if 'Access-Token' in request.headers:
-            if 'Refresh-Token' in request.headers:
-                access_token = request.headers['Access-Token']
-                print(access_token)
-                secret_key = SECRET_KEY
-                payload=None
-                try:
-                    payload = jwt.decode(access_token, secret_key)
-                except Exception as e:
-                    print(str(e))
-                username = payload.get("username")
-                first_name = payload.get("first_name")
-                last_name=payload.get("last_name")
-                received_expire_time = payload.get("expire_time")
-                received_issual_time = payload.get("issual_time")
-                if int(time.time()) > received_expire_time:
-                    response={'status':'Failure:Token Expired'}
+    response={"status":"Failure:Default"}
+    try:
+        if request.method=="GET":
+            if 'Access-Token' in request.headers:
+                if 'Refresh-Token' in request.headers:
+                    print("GET Method")
+                    access_token = request.headers['Access-Token']
+
+                    secret_key = SECRET_KEY
+                    payload = None
+                    try:
+                        payload = jwt.decode(access_token, secret_key)
+                    except Exception as e:
+                        print(str(e))
+                        response = {'status': 'Failure:Exception-' + str(e)}
+                    username = payload.get("username")
+
+                    received_expire_time = payload.get("expire_time")
+
+                    if int(time.time()) > received_expire_time:
+                        response = {'status': 'Failure:Token Expired'}
+
+                    else:
+                        user = None
+                        try:
+                            user = LoginCredentials.objects.get(username=username, password=payload.get("password"))
+                        except LoginCredentials.DoesNotExist:
+                            user = None
+                            response = {'status': 'Failure:Exception-' + str(e)}
+                        if user!=None:
+                            msgList = Message.objects.all()
+                            rsList = []
+                            print(msgList)
+                            for mg in msgList:
+                                rsList.append({"id": mg.id, "text": mg.message,
+                                               "created_by": {"first_name": mg.lid.firstname, "last_name": mg.lid.lastname,
+                                                              "username": mg.lid.username},
+                                               "created_at": mg.created_at, "updated_at": mg.updated_at})
+
+                            response = rsList
+                        else:
+                            response={'status':'Failure:User Does Not Exist'}
                 else:
-                    response={'status':'Success'}
+                    response = {"status": "Failure:No Refresh Token"}
             else:
-                response = {"status": "Failure:No Refresh Token"}
+                response = {'status': 'Failure:No Access Token'}
+
+
+        elif request.method=="POST":
+
+            if 'Access-Token' in request.headers:
+                if 'Refresh-Token' in request.headers:
+                    access_token = request.headers['Access-Token']
+
+                    secret_key = SECRET_KEY
+                    payload=None
+                    try:
+                        payload = jwt.decode(access_token, secret_key)
+                    except Exception as e:
+                        print(str(e))
+                        response = {'status': 'Failure:Exception-' + str(e)}
+                    username = payload.get("username")
+
+                    received_expire_time = payload.get("expire_time")
+
+                    if int(time.time()) > received_expire_time:
+                        response={'status':'Failure:Token Expired'}
+
+                    else:
+                        user = None
+                        try:
+                            user = LoginCredentials.objects.get(username=username, password=payload.get("password"))
+                        except LoginCredentials.DoesNotExist:
+                            user = None
+                        if user!=None:
+                            body_unicode = request.body.decode('utf-8')
+                            body_data = json.loads(body_unicode)
+                            msgobj=None
+                            try:
+                                Message.objects.filter(lid=user).update(message=body_data['text'],updated_at=datetime.datetime.now())
+                                msgobj=Message.objects.get(lid=user)
+                                print(msgobj)
+
+                                response = {'id': str(msgobj.id), "text": msgobj.message,
+                                                "created_by": {"first_name": msgobj.lid.firstname,
+                                                               "last_name": msgobj.lid.lastname,
+                                                               "username": msgobj.lid.username},
+                                                "created_at": msgobj.created_at, "updated_at": msgobj.updated_at}
+
+
+                            except Message.DoesNotExist:
+                                msgobj = None
+                                response = {'status': 'Failure:Exception-' + str(e)}
+                            if msgobj==None:
+
+                                msg=Message()
+                                msg.lid=user
+                                msg.message=body_data['text']
+                                dtnow=datetime.datetime.now()
+                                msg.created_at=dtnow
+                                msg.updated_at=dtnow
+                                msg.save()
+                                msg=Message.objects.get(lid=user,message=body_data['text'],created_at=dtnow,updated_at=dtnow)
+                                response={'id':msg.id,"text":msg.message,"created_by":{"first_name":msg.lid.firstname,"last_name":msg.lid.lastname,
+                                                                                       "username":msg.lid.username},
+                                          "created_at":msg.created_at,"updated_at":msg.updated_at}
+                        else:
+                            response={'status':'Failure:User does not exist.'}
+                else:
+                    response = {"status": "Failure:No Refresh Token"}
+            else:
+                response={'status':'Failure:No Access Token'}
         else:
-            response={'status':'Failure:No Access Token'}
-    else:
-        response = {"status": "Failure:The requested method only supports GET and POST."}
+            response = {"status": "Failure:The requested method only supports GET and POST."}
+    except Exception as e:
+        response = {"status": "Failure:Exception-"+str(e)}
     return JsonResponse(response,safe=False)

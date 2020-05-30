@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7e3818b7-b9e0-41eb-ba06-bdbf196b925c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fc_django/facerecog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/fc_django/facerecog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fc_django/facerecog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fc_django/facerecog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/fc_django/facerecog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/fc_django/facerecog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/request.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
