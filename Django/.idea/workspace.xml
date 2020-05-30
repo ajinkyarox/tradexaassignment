@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e3818b7-b9e0-41eb-ba06-bdbf196b925c" name="Default Changelist" comment="" />
+    <list default="true" id="7e3818b7-b9e0-41eb-ba06-bdbf196b925c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/facerecog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/fc_django/facerecog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/facerecog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/fc_django/facerecog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fc_django/facerecog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/fc_django/facerecog/views.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,45 +93,9 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579428402730">
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1590826387147">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="137" y="20" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1579428402730" />
-    <state x="413" y="112" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1580104595327">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="413" y="112" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1580104595327" />
-    <state x="409" y="4" key="#videoTester" timestamp="1579428352952">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="409" y="4" key="#videoTester/0.0.1366.728@0.0.1366.728" timestamp="1579428352952" />
-    <state x="463" y="120" key="FileChooserDialogImpl" timestamp="1577364485770">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="463" y="120" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1577364485770" />
-    <state width="1344" height="174" key="GridCell.Tab.0.bottom" timestamp="1579436118769">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1344" height="174" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1579436118769" />
-    <state width="1344" height="174" key="GridCell.Tab.0.center" timestamp="1579436118769">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1344" height="174" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1579436118769" />
-    <state width="1344" height="174" key="GridCell.Tab.0.left" timestamp="1579436118754">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1344" height="174" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1579436118754" />
-    <state width="1344" height="174" key="GridCell.Tab.0.right" timestamp="1579436118769">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="1344" height="174" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1579436118769" />
-    <state x="390" y="190" key="com.intellij.ide.util.TipDialog" timestamp="1581087026440">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="390" y="190" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1581087026440" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1579521191869">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1579521191869" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1590826387147" />
   </component>
 </project>

@@ -11,3 +11,12 @@ class LoginCredentials(models.Model):
 
     class Meta:
         db_table = "LoginCredentials"
+
+class Message(models.Model):
+    id = models.AutoField(primary_key=True)
+    lid=models.OneToOneField(LoginCredentials, on_delete=models.CASCADE)
+    message= models.CharField(max_length=256)
+    created_at=models.DateTimeField()
+    updated_at = models.DateTimeField()
+    class Meta:
+        db_table="Message"
